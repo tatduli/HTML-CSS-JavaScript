@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Charity and Support Foundation </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css"/>
+        
+    </head>
+    <body>
+
+  
+
+    <div class="wrapper">
+            <header class="main-head">
+                <h1> Charity and Support Foundation </h1>
+            <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" 
+                                data-toggle="collapse" data-target="#navbar" 
+                                aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>                      
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                        <li class="active font"><a href="index.html">Home</a></li>
+                        <li class= "font" ><a href="photos.html">Photos</a></li>
+                        <li class= "font" ><a href="support.html">Support</a></li>
+                        <li class= "font"><a href="contact.html">Contact</a></li>
+
+                        <!-- here is the dropdown menu -->
+
+                        <li class="dropdown font">
+                            <a href="#" class="dropdown-toggle" 
+                               data-toggle="dropdown" role="button" 
+                               aria-haspopup="true" aria-expanded="false">Rehabilitation <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li class= "font"><a href="https://en.adelicenter.eu/" target = "_blank">Adeli in Slovakia</a></li>
+                            <li class= "font"><a href="https://www.evexia.com/en/" target = "_blank">Evexia in Greece</a></li>
+                            <li class= "font"><a href="http://www.partenit.ru/delfinoterapiya.html" target = "_blank">Dolphin therapy</a></li>
+                            <!-- can you add another item to the dropdown? -->
+                            </ul>
+                        </li>
+                        
+
+                        <!-- the end of the dropdown menu -->
+
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                    </div><!--/.container-fluid -->
+                </nav>
+
+
+            </header>
+            
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+            <article class="content">
+                
+                    <h2>About Tadas </h2>
+                    <p>My son Tadas was born only 28 weeks old. His weight was just 1200g (2,6lb). 
+                        Tadas' condition was very serious. From the first minutes of his life he had 
+                        to fight for survival. He was incubated for applying an artificial lung 
+                        ventilation, because he could not breathe himself. After a few days his 
+                        condition got worse. He was diagnosed with brain bruising, what resulted 
+                        into hydrocephalus (the brain water).This damaged his brain. He was diagnosed 
+                        with children's cerebral palsy. Doctors did not give us too much hope, 
+                        they had only two opinions: my son's death or permanent disability.<br>
+                        Thank God, their opinions did not materialize. With the big help of 
+                        professionals my son can enjoy walking, more less take care of his own life.<br>
+                        That my son’s Tadas situation be stable, it requires constant work 
+                        (therapeutic exercise, occupational health, acupuncture, various massages, 
+                        swimming, horse and dolphin therapy, etc.). Miscellaneous equipment and 
+                        operations are necessary. However, it costs a lot of money.<br>
+                        Of course, all this can be abandoned. But I do not want to stop 
+                        halfway as so much has been achieved. <br>
+                        With this economic situation, I have not enough money to treat my son. 
+                        Your support is needed for the treatment only. </p>
+
+                
+            </article> 
+            <aside class="side">
+                <p><b>You can read more about Tadas here (in Lithuanian only):</b></p>
+                <a href ="http://www.vlmedicina.lt/2012/09/49846/" target = "_blank">
+                          www.vlmedicina.lt</a><br>
+                <a href ="https://gyvbudas.lrytas.lt/likimai/kudikysteje-nurasytas-kaunietis-stebina-talentais-ir-svajonemis.htm" 
+                          target = "_blank">gyvbudas.lrytas.lt</a><br>
+                <a href = "http://tv.lrytas.lt/?id=13633758471361125142" target = "_blank">
+                          tv.lrytas.lt</a><br>
+            </aside>
+            <div class="ad">
+               
+                    <div class = "video" style="text-align:center"> 
+                        <button onclick="playPause()">Play/Pause</button> 
+                        
+                        <br><br>
+                        <video id="video1" width="400">
+                            <source src="REHABILITATION_CEREBRAL_PALSY.mp4" type="video/mp4"> 
+                                            
+                            Your browser does not support HTML video.
+                        </video>
+                    </div> 
+                
+            </div>
+            <footer class="main-footer">&#169; Tadas Dulinskas Charity and Support Foundation</footer>
+    </div>
+
+
+      <script> 
+            var myVideo = document.getElementById("video1"); 
+
+            function playPause() { 
+            if (myVideo.paused) 
+                myVideo.play(); 
+            else 
+                myVideo.pause(); 
+            } 
+           
+        </script> 
+
+    </body>
+</html>
