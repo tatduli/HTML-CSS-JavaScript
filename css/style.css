@@ -1,0 +1,296 @@
+/*background:#e3eaa7 background:#d5e1df" background:#b5e7a0"
+"color:#fff;background:#86af49"*/
+
+@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+
+* {box-sizing: border-box;}
+
+body{
+  background:#e3eaa7;
+  margin: auto;
+   
+}
+.main-head{
+ background-color:#86af49; 
+ text-align: center;
+ position: relative;  
+  display: flex;
+   
+}
+
+div .main-head::before{
+  content: ""; 
+  background-image: url("../img/img38.jpg");
+  background-repeat: no-repeat;    
+  background-size: 100%;
+  background-position-y: 50%;
+  position: absolute;   
+ /*display: block; */ 
+ top: 0; 
+ left: 0; 
+ right: 0px;
+ bottom: 0px; 
+ opacity: 0.7;  
+
+}
+
+div .main-head h1{
+  position: relative;
+  font-weight: bold;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  color: #e3eaa7;
+ 
+}
+
+.navbar{
+  background-color:rgba(53, 69, 29, 0.2); 
+  border: none;
+  font-variant: small-caps;
+  
+}
+
+.navbar-default .navbar-nav > .active > a{
+  border-radius: 18px;  
+}
+.navbar-default{
+  margin-top: 10%;
+}
+ .navbar-default .navbar-nav > .font a{
+    color: #ffffff;   
+}
+
+.font:hover{
+  border-radius: 18px;  
+  background-color:#e3eaa7;   
+}
+
+
+
+
+ .navbar-default .dropdown .dropdown-menu >.font a{
+  color: #ffffff;  
+  background-color: #e3eaa7; 
+}
+.dropdown-menu{
+  background-color: #e3eaa7;
+}
+
+ .navbar-default .dropdown .dropdown-menu >.font a:hover{
+  color: #777;  
+  background-color: rgba(53, 69, 29, 0.2); 
+}
+
+.navbar-toggle{
+  background-color: #e3eaa7;
+  position: relative;
+  right: 0;
+  top:-100%;
+ 
+}
+.container-fluid{  
+   position: relative;
+    right: 0;
+   
+}
+
+ .movetext{
+ 
+  animation:text 1s step-start 0s infinite;
+  color: #e3eaa7;
+  text-align: center;
+  padding: 3%;
+ 
+}
+@keyframes text{
+   20% {
+    opacity: 0.5;
+  }
+}
+
+    .wrapper {
+       /* max-width: 1024px;*/
+        margin: 1% auto;
+        font: 1.2em Helvetica, arial, sans-serif;
+    }
+
+    .wrapper > * {
+        border: 2px solid #e3eaa7;
+        background-color: #86af49;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+.main-head {
+  grid-area: header;
+}
+.content {
+  grid-area: content;
+}
+.main-nav {
+  grid-area: nav;
+}
+.side {
+  grid-area: sidebar;
+}
+.ad {
+  grid-area: ad;
+}
+.main-footer {
+  grid-area: footer;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas: 
+    "header"
+    "nav"
+    "content"
+    "sidebar"
+    "ad"
+    "footer";
+}
+
+.content p{
+  text-align: justify;
+}
+
+.content h2
+{
+    overflow: visible;
+    font-family: 'Farsan', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+.video button{
+  background:  #e3eaa7;
+  font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.video button:hover{
+  background-color: #e3eaa7;
+  color: black;
+}
+
+/* Create two equal columns that floats next to each other */
+.column { 
+  float: left;
+  padding: 5px;  
+}
+.left{
+  width: 45%;
+  text-align: left;  
+}
+.right{
+  width: 55%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column{
+  margin-bottom: 5%;
+}
+
+.number {
+ margin-top: 5%;
+}
+.vid >*{
+  transform: translateY(50%);
+}
+
+.link a{
+color:#333;
+text-decoration: underline;
+}
+
+.link a:hover{
+color:#333;
+background-color: rgba(53, 69, 29, 0.2); 
+}
+.side{
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+
+
+.main-footer{
+  text-align: center;
+  font-size: 80%;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: 
+      "header  header"
+      "nav     nav"
+      "content sidebar"
+      "ad  ad"
+      "footer      footer";
+      
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  div .main-head {
+    display: inline-block;
+  }
+   .column{
+     font-size: 15px;
+
+}
+@media (min-width: 992px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-areas: 
+      "header header  header"
+      "content    content sidebar"
+      "content    content ad"
+      "footer footer  footer"
+   }
+ 
+  div .main-head {
+    display: inline-block;
+  }
+  .column.left{
+  width: 50%;
+  text-align: left;
+}
+.column.right{
+  width: 50%;
+}
+
+.content{
+   display: grid;  
+   justify-items: center;
+}
+
+  }
+
+  
+
+
+
+
